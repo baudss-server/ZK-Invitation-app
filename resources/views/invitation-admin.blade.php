@@ -189,10 +189,95 @@
 
         setInterval(fetchAdminRsvps, 3000);
     </script>
-    <script>
-    setTimeout(function () {
-        window.location.reload();
-    }, 3000);
+<script>
+    const adminKey = @json(request()->query('key'));
+
+    function escapeHtml(value) {
+        return String(value)
+            .replaceAll('&', '&amp;')
+            .replaceAll('<', '&lt;')
+            .replaceAll('>', '&gt;')
+            .replaceAll('"', '&quot;')
+            .replaceAll("'", '&#039;');
+    }
+
+    function renderRsvps(data) {
+        const totalEl = document.querySelector('.admin-stat-card strong');
+        const totalBadgeEl = document.querySelector('.admin-list-header span');
+        const listEl = document.querySelector('.admin-rsvp-list');
+        const emptyEl = document.querySelector('.admin-empty-state');
+
+        if (totalEl) {
+            totalEl.textContent = data.total;
+        }
+
+        if (totalBadgeEl) {
+            totalBadgeEl.textContent = `${data.total} total`;
+        }
+
+        if (!listEl) {
+            return;
+        }
+
+        if (!data.rsvps || data.rsvps.length === 0) {
+            listEl.style.display = 'none';
+
+            if (emptyEl) {
+                emptyEl.style.display = 'block';
+            }
+
+            return;
+        }
+
+        if (emptyEl) {
+            emptyEl.style.display = 'none';
+        }
+
+        listEl.style.display = 'flex';
+
+        listEl.innerHTML = data.rsvps.map((rsvp) => {
+            const name = escapeHtml(rsvp.name);
+            const createdAt = escapeHtml(rsvp.created_at);
+            const initial = name.charAt(0).toUpperCase();
+
+            return `
+                <div class="admin-rsvp-row">
+                    <div class="admin-rsvp-avatar">${initial}</div>
+
+                    <div class="admin-rsvp-info">
+                        <strong>${name}</strong>
+                        <span>${createdAt}</span>
+                    </div>
+
+                    <div class="admin-rsvp-status">
+                        I'm In
+                    </div>
+                </div>
+            `;
+        }).join('');
+    }
+
+    async function fetchAdminRsvps() {
+        try {
+            const response = await fetch(`/invitation-admin/rsvps?key=${encodeURIComponent(adminKey)}`, {
+                headers: {
+                    'Accept': 'application/json',
+                },
+                cache: 'no-store',
+            });
+
+            if (!response.ok) {
+                return;
+            }
+
+            const data = await response.json();
+            renderRsvps(data);
+        } catch (error) {
+            console.warn('Admin RSVP live update failed:', error);
+        }
+    }
+
+    setInterval(fetchAdminRsvps, 3000);
 </script>
 </body>
 </html>
