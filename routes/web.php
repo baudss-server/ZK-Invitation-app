@@ -9,6 +9,8 @@ Route::get('/invitation', function () {
 
 Route::post('/rsvp', [InvitationController::class, 'store'])->name('rsvp.submit');
 
+Route::get('/invitation-admin', [InvitationController::class, 'admin'])->name('invitation.admin');
+
 Route::get('/event-details', function () {
     return view('details');
 })->name('event.details');
