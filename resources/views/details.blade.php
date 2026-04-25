@@ -14,7 +14,7 @@
 
     <div class="page-wrapper" style="max-width: 850px; margin: 0 auto; padding-top: 20px; padding-bottom: 60px;">
         
-        <div class="content-card" style="flex-direction: column; text-align: center; padding: 40px;">
+        <div class="content-card event-details-card">
             
             <h1 style="font-size: 2.8rem;">Event Details</h1>
             <div class="subtitle">Everything you need to know about Baby Zean Kharique's Christening!</div>
@@ -71,33 +71,34 @@
                 </div>
             </div>
 
-            <div class="details-box" style="max-width: 100%; margin-bottom: 30px; background-color: #fdf9f1; border-color: #d4a373;">
-                <h3 style="color: #6b4d32; font-family: 'Fredoka One', cursive; font-size: 1.8rem; margin-bottom: 20px;">✨ Godparents ✨</h3>
-                <p style="margin-bottom: 25px; font-size: 1rem; color: #555;">To our principal sponsors, thank you for guiding Baby Zean!</p>
-                
-                <div style="display: flex; flex-wrap: wrap; gap: 20px; text-align: left;">
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 20px; border-radius: 12px; border: 2px dashed #ccc;">
-                        <h4 style="font-family: 'Fredoka One', cursive; color: #4CAF50; text-align: center; margin-top: 0;">🐻 Godfathers</h4>
-                        <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; font-weight: bold; color: #4a3623;">
-                            <li style="border-bottom: 1px solid #eee; padding: 8px 0;">1. Moraleda, Dale</li>
-                            <li style="border-bottom: 1px solid #eee; padding: 8px 0;">2. Ignacio, Louie</li>
-                            <li style="border-bottom: 1px solid #eee; padding: 8px 0;">3. Dela Cruz, Rovimil</li>
-                            <li style="border-bottom: 1px solid #eee; padding: 8px 0;">4. Estor, Francis</li>
-                            <li style="padding: 8px 0;">5. Garcia, Abel </li>
-                        </ul>
-                    </div>
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 20px; border-radius: 12px; border: 2px dashed #ccc;">
-                        <h4 style="font-family: 'Fredoka One', cursive; color: #ff6b6b; text-align: center; margin-top: 0;">🐼 Godmothers</h4>
-                        <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; font-weight: bold; color: #4a3623;">
-                            <li style="border-bottom: 1px solid #eee; padding: 8px 0;">1. Mallare, Lovelyn</li>
-                            <li style="border-bottom: 1px solid #eee; padding: 8px 0;">2. Dela Cruz, Reicel</li>
-                            <li style="border-bottom: 1px solid #eee; padding: 8px 0;">3. Manila, Ronalin</li>
-                            <li style="border-bottom: 1px solid #eee; padding: 8px 0;">4. Delos Santos, Ella Rica</li>
-                            <li style="padding: 8px 0;">5. Reyes, Raiza</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<div class="details-box godparents-box">
+    <h3 class="godparents-title">✨ Godparents ✨</h3>
+    <p class="godparents-subtitle">To our principal sponsors, thank you for guiding Baby Zean!</p>
+    
+    <div class="godparents-grid">
+        <div class="godparent-card">
+            <h4 class="godfather-title">🐻 Godfathers</h4>
+            <ul class="godparent-list">
+                <li>1. Moraleda, Dale</li>
+                <li>2. Ignacio, Louie</li>
+                <li>3. Dela Cruz, Rovimil</li>
+                <li>4. Estor, Francis</li>
+                <li>5. Garcia, Abel</li>
+            </ul>
+        </div>
+
+        <div class="godparent-card">
+            <h4 class="godmother-title">🐼 Godmothers</h4>
+            <ul class="godparent-list">
+                <li>1. Mallare, Lovelyn</li>
+                <li>2. Dela Cruz, Reicel</li>
+                <li>3. Manila, Ronalin</li>
+                <li>4. Delos Santos, Ella Rica</li>
+                <li>5. Reyes, Raiza</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
             <div class="details-box" style="max-width: 100%; margin-bottom: 40px; background-color: #f0f8ff; border-color: #A4C8E1;">
                 <h3 style="color: #6b4d32; font-family: 'Fredoka One', cursive; font-size: 1.5rem;">🕊️ A Blessing for Zean</h3>

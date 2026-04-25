@@ -104,4 +104,169 @@ h1 { font-family: 'Fredoka One', cursive; color: #ed6a5a; font-size: 2.5rem; mar
 .loader-content { text-align: center; }
 .loading-bar-container { width: 280px; height: 12px; background-color: #e0d5c1; border-radius: 10px; overflow: hidden; margin: 0 auto; border: 2px solid #6b4d32; }
 .loading-bar { width: 0%; height: 100%; background-color: #ed6a5a; border-radius: 10px; animation: fillBar 1s ease-in forwards; }
-@keyframes fillBar { 0% { width: 0%; } 50% { width: 70%; } 100% { width: 100%; } }
+/* ========================================================= */
+/* 10. EVENT DETAILS PAGE RESPONSIVE FIX */
+/* ========================================================= */
+.event-details-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+
+.godparents-box {
+    max-width: 100%;
+    margin-bottom: 30px;
+    background-color: #fdf9f1;
+    border-color: #d4a373;
+    overflow: hidden;
+}
+
+.godparents-title {
+    color: #6b4d32;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.8rem;
+    margin: 0 0 20px;
+}
+
+.godparents-subtitle {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.godparents-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.godparent-card {
+    flex: 1 1 240px;
+    min-width: 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px dashed #ccc;
+}
+
+.godfather-title,
+.godmother-title {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    margin-top: 0;
+}
+
+.godfather-title {
+    color: #4CAF50;
+}
+
+.godmother-title {
+    color: #ff6b6b;
+}
+
+.godparent-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+    font-weight: bold;
+    color: #4a3623;
+}
+
+.godparent-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+.godparent-list li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .page-wrapper {
+        padding: 18px 12px 40px;
+    }
+
+    .event-details-card {
+        width: 100%;
+        padding: 24px 14px;
+        border-radius: 18px;
+    }
+
+    .event-details-card h1 {
+        font-size: 2rem;
+        line-height: 1.05;
+    }
+
+    .event-details-card .subtitle {
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
+
+    .event-details-card .details-box {
+        max-width: 100%;
+        padding: 14px 12px;
+    }
+
+    .godparents-title {
+        font-size: 1.45rem;
+    }
+
+    .godparents-subtitle {
+        font-size: 0.9rem;
+        line-height: 1.45;
+        margin-bottom: 18px;
+    }
+
+    .godparents-grid {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .godparent-card {
+        width: 100%;
+        flex-basis: auto;
+        padding: 14px 12px;
+    }
+
+    .godparent-list {
+        font-size: 0.86rem;
+        line-height: 1.55;
+    }
+
+    .godparent-list li {
+        padding: 7px 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .page-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .event-details-card {
+        padding: 22px 10px;
+        border-width: 3px;
+    }
+
+    .event-details-card .details-box {
+        padding: 12px 10px;
+    }
+
+    .godparent-card {
+        padding: 12px 10px;
+    }
+
+    .godparent-list {
+        font-size: 0.8rem;
+    }
+}
