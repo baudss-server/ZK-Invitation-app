@@ -189,5 +189,10 @@
 
         setInterval(fetchAdminRsvps, 3000);
     </script>
+    <script>
+    setTimeout(function () {
+        window.location.reload();
+    }, 3000);
+</script>
 </body>
 </html>

@@ -11,7 +11,7 @@ class InvitationController
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'attendance' => 'required|string|in:yes',
+            'attendance' => 'required|string',
         ]);
 
         Rsvp::create([
@@ -26,7 +26,11 @@ class InvitationController
 
     public function admin(Request $request)
     {
-        $this->guardAdmin($request);
+        $adminKey = (string) env('INVITATION_ADMIN_KEY', '');
+
+        if ($adminKey === '' || ! hash_equals($adminKey, (string) $request->query('key', ''))) {
+            abort(403);
+        }
 
         $rsvps = Rsvp::where('attendance', 'yes')
             ->latest()
@@ -36,39 +40,5 @@ class InvitationController
             'rsvps' => $rsvps,
             'totalRsvps' => $rsvps->count(),
         ]);
-    }
-
-    public function adminRsvps(Request $request)
-    {
-        $this->guardAdmin($request);
-
-        $rsvps = Rsvp::where('attendance', 'yes')
-            ->latest()
-            ->get()
-            ->map(function ($rsvp) {
-                return [
-                    'id' => $rsvp->id,
-                    'name' => $rsvp->name,
-                    'created_at' => $rsvp->created_at
-                        ? $rsvp->created_at->format('M d, Y • h:i A')
-                        : 'No timestamp available',
-                ];
-            });
-
-        return response()->json([
-            'total' => $rsvps->count(),
-            'latest_name' => $rsvps->first()['name'] ?? 'None yet',
-            'latest_time' => $rsvps->first()['created_at'] ?? 'Waiting for guests',
-            'rsvps' => $rsvps,
-        ]);
-    }
-
-    private function guardAdmin(Request $request): void
-    {
-        $adminKey = (string) env('INVITATION_ADMIN_KEY', '');
-
-        if ($adminKey === '' || ! hash_equals($adminKey, (string) $request->query('key', ''))) {
-            abort(403);
-        }
     }
 }
