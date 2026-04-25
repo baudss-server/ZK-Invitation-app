@@ -1,0 +1,606 @@
+{
+  "name": "zk-invitation-app",
+  "path": "c:\\Users\\baudss\\Documents\\github\\zk-invitation-app",
+  "type": "directory",
+  "children": [
+    {
+      "name": "app",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Http",
+          "type": "folder",
+          "children": [
+            {
+              "name": "Controllers",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "InvitationController.php",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Models",
+          "type": "folder",
+          "children": [
+            {
+              "name": "Rsvp.php",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "Providers",
+          "type": "folder",
+          "children": [
+            {
+              "name": "AppServiceProvider.php",
+              "type": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bootstrap",
+      "type": "folder",
+      "children": [
+        {
+          "name": "app.php",
+          "type": "file"
+        },
+        {
+          "name": "providers.php",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "config",
+      "type": "folder",
+      "children": [
+        {
+          "name": "app.php",
+          "type": "file"
+        },
+        {
+          "name": "auth.php",
+          "type": "file"
+        },
+        {
+          "name": "cache.php",
+          "type": "file"
+        },
+        {
+          "name": "database.php",
+          "type": "file"
+        },
+        {
+          "name": "filesystems.php",
+          "type": "file"
+        },
+        {
+          "name": "logging.php",
+          "type": "file"
+        },
+        {
+          "name": "mail.php",
+          "type": "file"
+        },
+        {
+          "name": "queue.php",
+          "type": "file"
+        },
+        {
+          "name": "services.php",
+          "type": "file"
+        },
+        {
+          "name": "session.php",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "database",
+      "type": "folder",
+      "children": [
+        {
+          "name": "factories",
+          "type": "folder",
+          "children": [
+            {
+              "name": "UserFactory.php",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "migrations",
+          "type": "folder",
+          "children": [
+            {
+              "name": "2026_create_rsvps_table.php",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "seeders",
+          "type": "folder",
+          "children": [
+            {
+              "name": "DatabaseSeeder.php",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": ".gitignore",
+          "type": "file"
+        },
+        {
+          "name": "database.sqlite",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "public",
+      "type": "folder",
+      "children": [
+        {
+          "name": "images",
+          "type": "folder",
+          "children": [
+            {
+              "name": "grizzly.png",
+              "type": "file"
+            },
+            {
+              "name": "icebear.png",
+              "type": "file"
+            },
+            {
+              "name": "panda.png",
+              "type": "file"
+            },
+            {
+              "name": "party.gif",
+              "type": "file"
+            },
+            {
+              "name": "zk.jpg",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": ".htaccess",
+          "type": "file"
+        },
+        {
+          "name": "favicon.ico",
+          "type": "file"
+        },
+        {
+          "name": "index.php",
+          "type": "file"
+        },
+        {
+          "name": "robots.txt",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "resources",
+      "type": "folder",
+      "children": [
+        {
+          "name": "css",
+          "type": "folder",
+          "children": [
+            {
+              "name": "app.css",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "js",
+          "type": "folder",
+          "children": [
+            {
+              "name": "app.js",
+              "type": "file"
+            },
+            {
+              "name": "bootstrap.js",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "views",
+          "type": "folder",
+          "children": [
+            {
+              "name": "details.blade.php",
+              "type": "file"
+            },
+            {
+              "name": "invitation.blade.php",
+              "type": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "routes",
+      "type": "folder",
+      "children": [
+        {
+          "name": "console.php",
+          "type": "file"
+        },
+        {
+          "name": "web.php",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "storage",
+      "type": "folder",
+      "children": [
+        {
+          "name": "app",
+          "type": "folder",
+          "children": [
+            {
+              "name": "private",
+              "type": "folder",
+              "children": [
+                {
+                  "name": ".gitignore",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "public",
+              "type": "folder",
+              "children": [
+                {
+                  "name": ".gitignore",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": ".gitignore",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "framework",
+          "type": "folder",
+          "children": [
+            {
+              "name": "sessions",
+              "type": "folder",
+              "children": [
+                {
+                  "name": ".gitignore",
+                  "type": "file"
+                },
+                {
+                  "name": "Rw8aWUFq3Tk4zJqPEyAuR8hFLmRrAebOTOpm7FUp",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "testing",
+              "type": "folder",
+              "children": [
+                {
+                  "name": ".gitignore",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "views",
+              "type": "folder",
+              "children": [
+                {
+                  "name": ".gitignore",
+                  "type": "file"
+                },
+                {
+                  "name": "0c5fdabd6e40605c732de4b51ecb1698.php",
+                  "type": "file"
+                },
+                {
+                  "name": "0d9feb1ea2b393b8f60f3a75bfada37a.php",
+                  "type": "file"
+                },
+                {
+                  "name": "1014d7c14422764d5026296ced82d05d.php",
+                  "type": "file"
+                },
+                {
+                  "name": "11d11b69c09a17897e8b978ea01c669f.php",
+                  "type": "file"
+                },
+                {
+                  "name": "24d5769e922dac6aa6745993fee9aa8b.php",
+                  "type": "file"
+                },
+                {
+                  "name": "2ab0036cc488e04258f9afa7d33cc93a.php",
+                  "type": "file"
+                },
+                {
+                  "name": "2af85a8d20b564e03af3d1dbaa3b1c03.php",
+                  "type": "file"
+                },
+                {
+                  "name": "30ecaf8e7607933dd122180c27c736a1.php",
+                  "type": "file"
+                },
+                {
+                  "name": "35a5cb4e53a1cc4cbbfea450421329ce.php",
+                  "type": "file"
+                },
+                {
+                  "name": "3b89495f02eadefcf79d32c7b8940710.php",
+                  "type": "file"
+                },
+                {
+                  "name": "434921dbd933fafdd789bce6a2f34d88.php",
+                  "type": "file"
+                },
+                {
+                  "name": "4ae8b20734fe96e7aca58b0c91624486.php",
+                  "type": "file"
+                },
+                {
+                  "name": "5779c098f9fd2eac0682ad71d52940dc.php",
+                  "type": "file"
+                },
+                {
+                  "name": "603e188afb134c6d3f477f017b2200dc.php",
+                  "type": "file"
+                },
+                {
+                  "name": "61af893357f7b4100ff673a127014f9c.php",
+                  "type": "file"
+                },
+                {
+                  "name": "6465e4e32f6474dfb264f7dd286cde04.php",
+                  "type": "file"
+                },
+                {
+                  "name": "6cdbdc990c4fe1b4c8ccbdfa890ebf93.php",
+                  "type": "file"
+                },
+                {
+                  "name": "6ebe9643bfa90b287ffc0742e772149c.php",
+                  "type": "file"
+                },
+                {
+                  "name": "7710e1af959020ac23a15d8332d3a1bf.php",
+                  "type": "file"
+                },
+                {
+                  "name": "78ce83651e545cac8ca074ac79e7305e.php",
+                  "type": "file"
+                },
+                {
+                  "name": "796e81e7855add3af9861adcbce954e3.php",
+                  "type": "file"
+                },
+                {
+                  "name": "80b366c0ed9e192995cb33344a00edf5.php",
+                  "type": "file"
+                },
+                {
+                  "name": "84e29e656a71205b16f6b8a922484e56.php",
+                  "type": "file"
+                },
+                {
+                  "name": "88b9b29e725a276997c09e75355bf238.php",
+                  "type": "file"
+                },
+                {
+                  "name": "9347e2c84763e40ce0723b371d687ec3.php",
+                  "type": "file"
+                },
+                {
+                  "name": "95a6eb7922cb2ab05fce4227ea5bcdf5.php",
+                  "type": "file"
+                },
+                {
+                  "name": "964e9247103246b0ed31a1de09d3b5a3.php",
+                  "type": "file"
+                },
+                {
+                  "name": "97d1f61650d96f230de56ef5f2463f51.php",
+                  "type": "file"
+                },
+                {
+                  "name": "9898d5f4e8bde82074abeace491c6907.php",
+                  "type": "file"
+                },
+                {
+                  "name": "9a168b148401b22fa0da4d45a263045c.php",
+                  "type": "file"
+                },
+                {
+                  "name": "a7118154c213d7b1248fa5cb4cdd9323.php",
+                  "type": "file"
+                },
+                {
+                  "name": "a7cb9367b23e45a794216cae9f41f297.php",
+                  "type": "file"
+                },
+                {
+                  "name": "b26a49d24c6122dc1723a5ceb90a6fdf.php",
+                  "type": "file"
+                },
+                {
+                  "name": "b88de1586deecce6b254b230719e84a5.php",
+                  "type": "file"
+                },
+                {
+                  "name": "b96119ec93f9c0faeb7f439ae069c803.php",
+                  "type": "file"
+                },
+                {
+                  "name": "bcb7afade2a8b977e9ab139c9317e3fc.php",
+                  "type": "file"
+                },
+                {
+                  "name": "c13cfa1ad2907f5d1840c1f811434c79.php",
+                  "type": "file"
+                },
+                {
+                  "name": "c6584a92df6c4952586d5383ba464a24.php",
+                  "type": "file"
+                },
+                {
+                  "name": "c863f9434f812bdf0c76f93d2629ce32.php",
+                  "type": "file"
+                },
+                {
+                  "name": "cee4665845a8ef5f41f58033453dc0f4.php",
+                  "type": "file"
+                },
+                {
+                  "name": "d1bd7b7811128c166cba9855780d3a53.php",
+                  "type": "file"
+                },
+                {
+                  "name": "eb65cb35d6a451b7586ca3c05c5ab1df.php",
+                  "type": "file"
+                },
+                {
+                  "name": "fd30b599247abf8f66fe4438ebc17241.php",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": ".gitignore",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "logs",
+          "type": "folder",
+          "children": [
+            {
+              "name": ".gitignore",
+              "type": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tests",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Feature",
+          "type": "folder",
+          "children": [
+            {
+              "name": "ExampleTest.php",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "Unit",
+          "type": "folder",
+          "children": [
+            {
+              "name": "ExampleTest.php",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "TestCase.php",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": ".editorconfig",
+      "type": "file"
+    },
+    {
+      "name": ".env.example",
+      "type": "file"
+    },
+    {
+      "name": ".gitattributes",
+      "type": "file"
+    },
+    {
+      "name": ".gitignore",
+      "type": "file"
+    },
+    {
+      "name": "README.md",
+      "type": "file"
+    },
+    {
+      "name": "artisan",
+      "type": "file"
+    },
+    {
+      "name": "composer.json",
+      "type": "file"
+    },
+    {
+      "name": "filetree.json",
+      "type": "file"
+    },
+    {
+      "name": "package-lock.json",
+      "type": "file"
+    },
+    {
+      "name": "package.json",
+      "type": "file"
+    },
+    {
+      "name": "phpunit.xml",
+      "type": "file"
+    },
+    {
+      "name": "vite.config.js",
+      "type": "file"
+    }
+  ],
+  "metadata": {
+    "generated": "2026-04-25T02:47:52.564Z",
+    "generator": "FileTree Pro Extension",
+    "version": "0.2.0",
+    "showIcons": false,
+    "maxDepth": 10
+  }
+}
