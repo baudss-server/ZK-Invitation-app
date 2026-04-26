@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baby Zean's Birthday & Christening</title>
+    <meta name="description" content="Join us as we celebrate Baby Zean Kharique Santos Lazaro's Birthday & Christening on May 24, 2026.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Baby Zean's Birthday & Christening">
+<meta property="og:description" content="Join us as we celebrate Baby Zean Kharique Santos Lazaro's Birthday & Christening on May 24, 2026.">
+<meta property="og:url" content="{{ url('/') }}">
+<meta property="og:image" content="{{ asset('images/share-preview.jpg') }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Baby Zean's Birthday & Christening">
+<meta name="twitter:description" content="Join us as we celebrate Baby Zean Kharique Santos Lazaro's Birthday & Christening on May 24, 2026.">
+<meta name="twitter:image" content="{{ asset('images/share-preview.jpg') }}">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
