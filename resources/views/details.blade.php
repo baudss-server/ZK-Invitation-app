@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baby Zean's Christening Details</title>
+    <title>Baby Zean's Birthday & Christening Details</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -17,7 +17,7 @@
         <div class="content-card event-details-card">
             
             <h1 style="font-size: 2.8rem;">Event Details</h1>
-            <div class="subtitle">Everything you need to know about Baby Zean Kharique's Christening!</div>
+            <div class="subtitle">Everything you need to know about Baby Zean Kharique's Birthday & Christening!</div>
             
             <div style="margin: 15px 0 30px;">
                 <img src="{{ asset('images/zk.jpg') }}" alt="Baby Zean Kharique" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 4px solid #6b4d32; box-shadow: 0 8px 15px rgba(0,0,0,0.1);">
@@ -47,12 +47,12 @@
                 <hr style="border: 1px dashed #ccc; margin: 25px 0;">
 
                 <h3 style="color: #6b4d32; font-family: 'Fredoka One', cursive; font-size: 1.5rem; margin-bottom: 15px;">📅 Save the Date</h3>
-                <p style="font-size: 0.95rem; color: #777; margin-bottom: 18px;">Add Baby Zean's Christening to your calendar.</p>
+                <p style="font-size: 0.95rem; color: #777; margin-bottom: 18px;">Add Baby Zean's Birthday & Christening to your calendar.</p>
 
                 <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 12px;">
                     <a
-                       href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Baby%20Zean%27s%20Christening&dates=20260524T030000Z/20260524T070000Z&details=Church%20Ceremony%20at%2011%3A00%20AM.%20Reception%20follows%20after%20the%20Mass%20at%20ECS3%20Farm%20%26%20Resort%20-%20Manggahan%20sa%20Riles.&location=Diocesan%20Shrine%20and%20Parish%20of%20San%20Miguel%20Arcangel%20San%20Miguel%2C%20Bulacan"
-                        target="_blank"
+                       
+                        target="_blank"href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Baby%20Zean%27s%20Birthday%20%26%20Christening&dates=20260524T030000Z/20260524T070000Z&details=Church%20Ceremony%20at%2011%3A00%20AM.%20Reception%20follows%20after%20the%20Mass%20at%20ECS3%20Farm%20%26%20Resort%20-%20Manggahan%20sa%20Riles.&location=Diocesan%20Shrine%20and%20Parish%20of%20San%20Miguel%20Arcangel%20San%20Miguel%2C%20Bulacan"
                         rel="noopener"
                         class="visit-btn"
                         style="width: auto; max-width: 280px; padding: 12px 22px; font-size: 1rem; text-align: center; text-decoration: none;"
@@ -61,8 +61,8 @@
                     </a>
 
                     <a
-                       href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ASUMMARY:Baby%20Zean%27s%20Christening%0ADTSTART:20260524T030000Z%0ADTEND:20260524T070000Z%0ADESCRIPTION:Church%20Ceremony%20at%2011%3A00%20AM.%20Reception%20follows%20after%20the%20Mass%20at%20ECS3%20Farm%20%26%20Resort%20-%20Manggahan%20sa%20Riles.%0ALOCATION:Diocesan%20Shrine%20and%20Parish%20of%20San%20Miguel%20Arcangel%20San%20Miguel%2C%20Bulacan%0AEND:VEVENT%0AEND:VCALENDAR"
-                        download="baby-zean-christening.ics"
+                      href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ASUMMARY:Baby%20Zean%27s%20Birthday%20%26%20Christening%0ADTSTART:20260524T030000Z%0ADTEND:20260524T070000Z%0ADESCRIPTION:Church%20Ceremony%20at%2011%3A00%20AM.%20Reception%20follows%20after%20the%20Mass%20at%20ECS3%20Farm%20%26%20Resort%20-%20Manggahan%20sa%20Riles.%0ALOCATION:Diocesan%20Shrine%20and%20Parish%20of%20San%20Miguel%20Arcangel%20San%20Miguel%2C%20Bulacan%0AEND:VEVENT%0AEND:VCALENDAR"
+                        download="baby-zean-birthday-christening.ics"
                         class="visit-btn"
                         style="width: auto; max-width: 280px; padding: 12px 22px; font-size: 1rem; text-align: center; text-decoration: none;"
                     >

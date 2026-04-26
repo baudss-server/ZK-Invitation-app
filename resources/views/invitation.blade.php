@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baby Zean's Christening</title>
+    <title>Baby Zean's Birthday & Christening</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -19,8 +19,8 @@
                 <div style="text-align: center; margin-bottom: 15px;">
                     <img src="{{ asset('images/zk.jpg') }}" alt="Baby Zean Kharique" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; border: 4px solid #6b4d32; box-shadow: 0 8px 15px rgba(0,0,0,0.1);">
                 </div>
-                <h1>Baby Zean's Christening!</h1>
-                <div class="subtitle">Welcome to the Christian world, Zean Kharique Santos Lazaro!</div>
+                <h1>Baby Zean's Birthday & Christening!</h1>
+                <div class="subtitle">Come celebrate Zean Kharique Santos Lazaro's Birthday & Christening!</div>
             </div>
 
             <div class="left-column">
